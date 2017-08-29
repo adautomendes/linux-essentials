@@ -1,4 +1,9 @@
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y dist-upgrade
+sudo apt-get -y autoclean
+sudo apt-get -y autoremove
+sudo apt-get -y clean
 
 echo "Instalar Google Chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
