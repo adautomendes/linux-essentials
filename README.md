@@ -8,6 +8,7 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 <li>Spotify</li>
 <li>Git</li>
 <li>Sublime</li>
+<li>VSCode</li>
 <li>Lamp</li>
 <li>phpMyAdmin</li>
 <li>Node.js</li>
