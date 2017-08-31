@@ -28,6 +28,12 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get update
 sudo apt-get install -y sublime-text-installer
 
+echo "Instalar VSCode"
+wget https://az764295.vo.msecnd.net/stable/41abd21afdf7424c89319ee7cb0445cc6f376959/code_1.15.1-1502903936_amd64.deb
+sudo dpkg -i code_1.15.1-1502903936_amd64.deb
+sudo apt-get install -f
+rm code_1.15.1-1502903936_amd64.deb
+
 echo "Instalar lamp"
 sudo apt-get update
 sudo apt-get install -y lamp-server^
