@@ -24,9 +24,11 @@ echo "Instalar Git"
 sudo apt-get install -y git
 
 echo "Instalar Sublime"
-sudo add-apt-repository ppa:webupd8team/sublime-text-3
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo apt-get install -y apt-transport-https
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-get update
-sudo apt-get install -y sublime-text-installer
+sudo apt-get install -y sublime-text
 
 echo "Instalar VSCode"
 wget https://az764295.vo.msecnd.net/stable/41abd21afdf7424c89319ee7cb0445cc6f376959/code_1.15.1-1502903936_amd64.deb
