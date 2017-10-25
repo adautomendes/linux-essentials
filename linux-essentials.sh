@@ -83,6 +83,15 @@ echo "Instalar fontes do Windows"
 sudo apt install ttf-mscorefonts-installer
 sudo fc-cache -f -v
 
+echo "Instalar fonte Monaco"
+cd /usr/share/fonts/truetype/
+sudo mkdir ttf-monaco
+cd ttf-monaco/
+sudo wget http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf
+sudo mkfontdir
+cd ..
+fc-cache
+
 echo "Instalar Dropbox"
 wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -

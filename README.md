@@ -1,7 +1,7 @@
 # linux-essentials
 Script for install many mandatory apps on linux after a fresh install of the OS.
 
-<b>Programs included:</b>
+<b>Programs and resources included:</b>
 <ul>
 <li>Google Chrome</li>
 <li>Chromium Browser</li>
@@ -15,6 +15,7 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 <li>Django/VirtualEnv</li>
 <li>WPS Office</li>
 <li>Windows Fonts</li>
+<li>Monaco Font</li>
 <li>Dropbox</li>
 </ul>
 
