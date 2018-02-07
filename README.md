@@ -5,6 +5,7 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 <ul>
 <li>Google Chrome</li>
 <li>Chromium Browser</li>
+<li>Opera Browser</li>
 <li>Spotify</li>
 <li>Git</li>
 <li>Sublime</li>
