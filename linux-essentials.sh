@@ -14,6 +14,12 @@ rm google-chrome-stable_current_amd64.deb
 echo "Instalar Chromium Browser"
 sudo apt-get install -y chromium-browser
 
+echo "Instalar Opera Browser"
+wget http://download1.operacdn.com/pub/opera/desktop/50.0.2762.67/linux/opera-stable_50.0.2762.67_amd64.deb
+sudo dpkg -i opera-stable_50.0.2762.67_amd64.deb
+sudo apt-get -f install
+rm opera-stable_50.0.2762.67_amd64.deb
+
 echo "Instalar Spotify"
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
