@@ -12,6 +12,8 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 <li>Lamp</li>
 <li>phpMyAdmin</li>
 <li>Node.js</li>
+<li>Postman</li>
+<li>Insomnia</li>
 <li>Django/VirtualEnv</li>
 <li>WPS Office</li>
 <li>Monaco Font</li>

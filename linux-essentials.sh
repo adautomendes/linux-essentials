@@ -60,6 +60,12 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 
+echo "Instalar Postman"
+sudo snap install postman
+
+echo "Instalar Insomnia"
+sudo snap install insomnia
+
 echo "Instalar Django/VirtualEnv"
 sudo apt install -y python-pip
 sudo pip install --upgrade pip
