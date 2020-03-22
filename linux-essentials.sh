@@ -5,6 +5,9 @@ sudo apt-get -y autoclean
 sudo apt-get -y autoremove
 sudo apt-get -y clean
 
+echo "Instalar Snap"
+sudo apt install snapd
+
 echo "Instalar Google Chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
