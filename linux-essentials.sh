@@ -86,13 +86,15 @@ sudo apt install ttf-mscorefonts-installer
 sudo fc-cache -f -v
 
 echo "Instalar fonte Monaco"
-cd /usr/share/fonts/truetype/
-sudo mkdir ttf-monaco
-cd ttf-monaco/
-sudo wget http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf
+git clone git://github.com/lucascaton/lcaton-setuplinux.git ~/.setuplinux
+sudo mkdir /usr/share/fonts/truetype/myfonts
+cd /usr/share/fonts/truetype/myfonts
+sudo cp ~/.setuplinux/files/Monaco_Linux.ttf .
+sudo chown root:root Monaco_Linux.ttf
 sudo mkfontdir
 cd ..
 fc-cache
+rm -rf ~/.setuplinux/
 
 echo "Script finalizado..."
 echo "Reinicie a sistema!"
