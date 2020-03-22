@@ -14,11 +14,11 @@ rm google-chrome-stable_current_amd64.deb
 echo "Instalar Chromium Browser"
 sudo apt-get install -y chromium-browser
 
-echo "Instalar Opera Browser"
-wget https://download1.operacdn.com/pub/opera/desktop/67.0.3575.97/linux/opera-stable_67.0.3575.97_amd64.deb
-sudo dpkg -i opera-stable_67.0.3575.97_amd64.deb
-sudo apt-get -f install
-rm opera-stable_67.0.3575.97_amd64.deb
+# echo "Instalar Opera Browser"
+# wget https://download1.operacdn.com/pub/opera/desktop/67.0.3575.97/linux/opera-stable_67.0.3575.97_amd64.deb
+# sudo dpkg -i opera-stable_67.0.3575.97_amd64.deb
+# sudo apt-get -f install
+# rm opera-stable_67.0.3575.97_amd64.deb
 
 echo "Instalar Spotify"
 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
