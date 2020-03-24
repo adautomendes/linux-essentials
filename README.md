@@ -16,6 +16,8 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 <li>Insomnia</li>
 <li>Django/VirtualEnv</li>
 <li>WPS Office</li>
+<li>FiraCode Font</li>
+<li>Windows Fonts</li>
 <li>Monaco Font</li>
 </ul>
 

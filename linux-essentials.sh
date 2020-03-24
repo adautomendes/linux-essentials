@@ -87,6 +87,9 @@ cd && wget -O wps-office.deb http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/d
 sudo dpkg -i wps-office.deb
 sudo apt-get -f install && rm wps-office.deb
 
+echo "Instalar fonte FiraCode"
+sudo apt install fonts-firacode
+
 echo "Instalar fontes do Windows"
 sudo apt install ttf-mscorefonts-installer
 sudo fc-cache -f -v
