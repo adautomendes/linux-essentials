@@ -91,7 +91,7 @@ echo "Instalar fonte FiraCode"
 sudo apt install fonts-firacode
 
 echo "Instalar fontes do Windows"
-sudo apt install ttf-mscorefonts-installer
+sudo apt install -y ttf-mscorefonts-installer
 sudo fc-cache -f -v
 
 echo "Instalar fonte Monaco"
