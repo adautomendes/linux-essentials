@@ -19,6 +19,8 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 <li>FiraCode Font</li>
 <li>Windows Fonts</li>
 <li>Monaco Font</li>
+<li>Yarn</li>
+<li>MongoDB</li>
 </ul>
 
 <b>This script also removes LibreOffice.</b>
