@@ -10,6 +10,10 @@ echo "Instalar Snap"
 sudo apt install snapd
 
 echo ""
+echo "Instalar cUrl"
+sudo apt install curl
+
+echo ""
 echo "Instalar Google Chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
