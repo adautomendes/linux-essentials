@@ -106,8 +106,10 @@ sudo apt install fonts-firacode
 
 echo ""
 echo "Instalar fontes do Windows"
-sudo apt install -y ttf-mscorefonts-installer
+wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.7_all.deb -P ~/Downloads
+sudo apt install -y ~/Downloads/ttf-mscorefonts-installer_3.7_all.deb
 sudo fc-cache -f -v
+rm -f ~/Downloads/ttf-mscorefonts-installer_3.7_all.deb
 
 echo ""
 echo "Instalar fonte Monaco"
