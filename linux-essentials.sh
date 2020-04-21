@@ -7,11 +7,11 @@ sudo apt-get -y clean
 
 echo ""
 echo "Instalar Snap"
-sudo apt install snapd
+sudo apt install -y snapd
 
 echo ""
 echo "Instalar cUrl"
-sudo apt install curl
+sudo apt install -y curl
 
 echo ""
 echo "Instalar Google Chrome"
