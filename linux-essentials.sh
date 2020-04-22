@@ -96,7 +96,7 @@ sudo apt-get autoremove
 
 echo ""
 echo "Instalar WPS Office"
-cd && wget -O wps-office.deb http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9126/wps-office_11.1.0.9126.XA_amd64.deb
+cd && wget -O wps-office.deb http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9505/wps-office_11.1.0.9505.XA_amd64.deb
 sudo dpkg -i wps-office.deb
 sudo apt-get -f install && rm wps-office.deb
 
