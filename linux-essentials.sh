@@ -28,7 +28,7 @@ echo ""
 echo "Instalar Spotify"
 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt-get update && sudo apt-get install -y spotify-client
+sudo apt-get -y update && sudo apt-get install -y spotify-client
 
 echo ""
 echo "Instalar Git"
@@ -39,7 +39,7 @@ echo "Instalar Sublime"
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 sudo apt-get install -y apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get install -y sublime-text
 
 echo ""
@@ -48,9 +48,9 @@ sudo snap install code --classic
 
 echo ""
 echo "Instalar lamp"
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get install -y lamp-server^
-sudo apt-get update
+sudo apt-get -y update
 
 echo ""
 echo "Instalar phpmyadmin"
@@ -67,6 +67,21 @@ echo "Instalar Node.js"
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
+
+echo ""
+echo "Instalar Yarn"
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get -y update && sudo apt-get install -y yarn
+
+echo ""
+echo "Instalar MongoDB"
+wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+sudo apt-get install -y gnupg
+wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+sudo apt-get -y update
+sudo apt-get install -y mongodb-org
 
 echo ""
 echo "Instalar Postman"
@@ -90,9 +105,9 @@ sudo pip install mysqlclient
 
 echo ""
 echo "Remover LibreOffice"
-sudo apt-get remove --purge libreoffice*
-sudo apt-get clean
-sudo apt-get autoremove
+sudo apt-get -y remove --purge libreoffice*
+sudo apt-get -y clean
+sudo apt-get -y autoremove
 
 echo ""
 echo "Instalar WPS Office"
@@ -102,7 +117,7 @@ sudo apt-get -f install && rm wps-office.deb
 
 echo ""
 echo "Instalar fonte FiraCode"
-sudo apt install fonts-firacode
+sudo apt install -y fonts-firacode
 
 echo ""
 echo "Instalar fontes do Windows"
@@ -122,21 +137,6 @@ sudo mkfontdir
 cd ..
 fc-cache
 rm -rf ~/.setuplinux/
-
-echo ""
-echo "Instalar Yarn"
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install -y yarn
-
-echo ""
-echo "Instalar MongoDB"
-wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
-sudo apt-get install -y gnupg
-wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
-sudo apt-get update
-sudo apt-get install -y mongodb-org
 
 echo "Script finalizado..."
 echo "Reinicie a sistema!"

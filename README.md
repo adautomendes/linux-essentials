@@ -3,6 +3,8 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 
 <b>Programs and resources included:</b>
 <ul>
+<li>Snap</li>
+<li>cUrl</li>
 <li>Google Chrome</li>
 <li>Chromium Browser</li>
 <li>Spotify</li>
@@ -12,6 +14,8 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 <li>Lamp</li>
 <li>phpMyAdmin</li>
 <li>Node.js</li>
+<li>Yarn</li>
+<li>MongoDB</li>
 <li>Postman</li>
 <li>Insomnia</li>
 <li>Django/VirtualEnv</li>
@@ -19,8 +23,6 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 <li>FiraCode Font</li>
 <li>Windows Fonts</li>
 <li>Monaco Font</li>
-<li>Yarn</li>
-<li>MongoDB</li>
 </ul>
 
 <b>This script also removes LibreOffice.</b>
