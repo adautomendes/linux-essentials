@@ -6,7 +6,6 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 <li>Snap</li>
 <li>cUrl</li>
 <li>Google Chrome</li>
-<li>Chromium Browser</li>
 <li>Spotify</li>
 <li>Git</li>
 <li>Sublime</li>
@@ -18,8 +17,8 @@ Script for install many mandatory apps on linux after a fresh install of the OS.
 <li>MongoDB</li>
 <li>Postman</li>
 <li>Insomnia</li>
-<li>Django/VirtualEnv</li>
 <li>WPS Office</li>
+<li>Plank</li>
 <li>FiraCode Font</li>
 <li>Windows Fonts</li>
 <li>Monaco Font</li>

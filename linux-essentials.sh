@@ -21,10 +21,6 @@ sudo apt-get -f install
 rm google-chrome-stable_current_amd64.deb
 
 echo ""
-echo "Instalar Chromium Browser"
-sudo apt-get install -y chromium-browser
-
-echo ""
 echo "Instalar Spotify"
 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
@@ -92,18 +88,6 @@ echo "Instalar Insomnia"
 sudo snap install insomnia
 
 echo ""
-echo "Instalar Django/VirtualEnv"
-sudo apt install -y python-pip
-sudo pip install --upgrade pip
-sudo apt install -y virtualenv
-sudo pip install django
-sudo apt-get install -y python-dev python3-dev
-sudo apt-get install -y libmysqlclient-dev 
-sudo pip install setuptools
-sudo pip install pymysql
-sudo pip install mysqlclient
-
-echo ""
 echo "Remover LibreOffice"
 sudo apt-get -y remove --purge libreoffice*
 sudo apt-get -y clean
@@ -114,6 +98,10 @@ echo "Instalar WPS Office"
 cd && wget -O wps-office.deb http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9505/wps-office_11.1.0.9505.XA_amd64.deb
 sudo dpkg -i wps-office.deb
 sudo apt-get -f install && rm wps-office.deb
+
+echo ""
+echo "Instalar Plank"
+sudo apt install -y plank
 
 echo ""
 echo "Instalar fonte FiraCode"
